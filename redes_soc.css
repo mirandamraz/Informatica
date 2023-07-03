@@ -1,0 +1,13 @@
+.flotante{
+    display:scroll;
+        position:fixed;
+        bottom:120px;
+        right:0px;
+}
+
+.flotante2 {
+    display:scroll;
+        position:fixed;
+        bottom:80px;
+        right:0px;
+}

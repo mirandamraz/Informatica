@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.menutitulo { 
+	padding-left: 10px; color: #fff; background: #7D1404; font-size: 1em; height: 26px; line-height: 26px; width:230px; text-transform: uppercase;
+}
+
+div.menutitulo a, div.menutitulo a:hover, div.menutitulo a:visited{ 
+	text-decoration:none; color: #D5D1CE; font-weight:bold;
+}
+
+.sidebarmenu ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font: 11px Verdana;
+	width: 240px; /* Main Menu Item widths */
+	border-bottom: 1px solid #ccc;
+}
+ 
+.sidebarmenu ul li{
+	position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+	display: block;
+	overflow: auto; /*force hasLayout in IE7 */
+	color: white;
+	text-decoration: none;
+	padding: 6px;
+	border-bottom: 1px solid #778;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+	background-color: #292929; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+	color: white;
+}
+
+.sidebarmenu ul li a:hover{
+	background-color: black;
+	font-size: 14px;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+	position: absolute; z-index:500;
+	width: 240px; /*Sub Menu Items width */
+	top: 0;
+	visibility: hidden;
+}
+
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+
+/*para las cajas de noticias, eventos, etc*/
+.enlaces {
+	background-color: #D4D483;
+}
+
+#unnews {	
+	float: left; width: 23.5em;
+	margin-left: 25px;
+	margin-top: 25px; 
+	margin-bottom: 0;
+	margin-right:0;
+	display: inline; /* DO NOT REMOVE: IE6 FIX */
+	clear:left;
+}
+
+#unnews .box {
+	border: 1px solid #8f8f64;
+	margin-bottom: 25px;
+	/*overflow: auto;*/
+	padding: 0px 0px 5px 0px;
+	float: left;
+	width: 100%;
+	background-color: #B3B38F;
+}
+
+#unnews .box div.notiliga {
+	border-bottom: 1px dotted #514D40; margin-left:5px; margin-right: 8px; padding-bottom:3px;
+}
+
+#unnews .box p{
+	margin-left: 2px; padding-top:6px;
+}
+
+#unnews .box img.fnoti {
+    border: none; float:left; padding: 2px 8px 0px 0px;
+}
+
+#unnews .box a, #unnews .box a:link, #unnews .box a:visited, #unnews .box a:hover, #unnews .box a:active {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	color: #000;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+#unnews .box a:hover {
+	color: #ff0000;
+	text-decoration: none;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+#unnews .box h2.titulonews {
+	background-color: #f0f0bd;
+	margin-top: 0px;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	padding-left: 0.4em;
+	padding-bottom: 6px;
+	padding-top: 2px;
+	margin-bottom: 10px;
+	background-image: url(../images/greentitlebar.jpg);
+	text-transform: uppercase;
+}
+
+/********para div de enmedio******************/
+#homepagecontent{
+	margin:0 auto;
+	width:100%;
+	padding:0.1em 0;
+}
+
+#aboutun {
+	width: 41.2em;
+	/*margin: .6em .8em 0 .8em;*/
+	display: inline; /* DO NOT REMOVE: IE6 FIX */
+	/*padding:.6em 21.3em 0 21.3em;*/
+	float:right;
+	margin-top:.6em;
+	margin-right:.4em;
+	margin-bottom:0;
+	margin-left:-50.5em;
+}
+
+#aboutun .aboutun1 {
+	width: 20em;
+	float: left;
+	padding-bottom: 0.35em;
+	margin-bottom: 0.5em;
+	clear:both;
+}
+
+
+/********************/
+#unnews2 {	
+	float: right; width: 23.5em;
+	margin-right: 25px;
+	margin-top: 25px; 
+	margin-bottom: 0;
+	margin-left:0;
+	display: inline; /* DO NOT REMOVE: IE6 FIX */ clear:right;
+}
+
+#unnews2 .box {
+	border: 1px solid #8f8f64;
+	margin-bottom: 25px;
+	/*overflow: auto;*/
+	padding: 0px 0px 5px 0px;
+	float: left;
+	width: 100%;
+	background-color: #B3B38F;
+}
+
+#unnews2 .box div.notiliga2 {
+	border-bottom: 1px dotted #514D40; margin-left:5px; margin-right: 8px; padding-bottom:3px;
+}
+
+#unnews2 .box p{
+	margin-left: 2px; padding-top:6px;
+}
+
+#unnews2 .box .fnoti2 {
+    border: none; float:left; padding: 2px 8px 0px 0px;
+}
+
+#unnews2 .box a, #unnews2 .box a:link, #unnews2 .box a:visited, #unnews2 .box a:hover, #unnews2 .box a:active {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	color: #000;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+#unnews2 .box a:hover {
+	color: #ff0000;
+	text-decoration: none;
+}
+
+#unnews2 .box h2.titulonews {
+	background-color: #f0f0bd; margin-top: 0px;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	padding-left: 0.4em; padding-bottom: 6px; padding-top:2px;
+	margin-bottom: 10px;
+	background-image: url(../images/greentitlebar.jpg); text-transform:uppercase;
+}
+
+/***********para las noticias del suneo**************/
+#unnews3 {	
+    float: right; width: 23.5em;
+	margin-right: 25px;
+	margin-top: 25px; 
+	margin-bottom: 0;
+	margin-left:0;
+	display: inline; /* DO NOT REMOVE: IE6 FIX */
+}
+
+#unnews3 .boxsuneo {
+	border: 1px solid #8f8f64;
+	margin: 2 0 25 0;
+	/*overflow: auto;*/
+	padding: 0;
+	float: none;
+	width: 100%;
+	background: #FFF;
+}
+
+#unnews3 .boxsuneo h2.titulonews {
+	background-color: #f0f0bd; margin-top: 0px;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	padding-left: 0.4em; padding-bottom: 6px; padding-top:2px;
+	margin-bottom: 0px;
+	background-image: url(../images/greentitlebar.jpg);
+}
